@@ -141,9 +141,9 @@ header img {
   }
 }
 
-@media(min-width:768px) {
+@media (min-width:768px) and (min-height: 600px) {
     header .intro-text {
-        padding-top: 300px;
+        padding-top: 25%;
         padding-bottom: 200px;
     }
 
@@ -167,6 +167,24 @@ header img {
     header img {
       max-height: 300px;
       margin-top: 1.5em;
+    }
+}
+
+@media(min-width: 1200px){
+    header .intro-text .intro-heading {
+        margin-bottom: 25px;
+    }
+
+    header img {
+        max-height: 280px;
+        margin-top: 0;
+    }
+}
+
+@media(orientation: portrait) and (min-height: 1024px) {
+    header .intro-text {
+        padding-top: 40vh;
+        padding-bottom: 200px;
     }
 }
 
